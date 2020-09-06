@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "1/YFdKq9maWlDT8pFgrFk39KZw2dTuiyO0MFUNpmzrbLgc7oZktXjY7BeEYctjW5cfzIGYWMJCW3+aoVyrwKqg==",
+  "success": true,
+  "projectFilePath": "F:\\code2020\\dotnet5\\ConsoleClient\\ConsoleClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jiegege\\.nuget\\packages\\identitymodel\\4.3.1\\identitymodel.4.3.1.nupkg.sha512",
+    "C:\\Users\\jiegege\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\jiegege\\.nuget\\packages\\system.text.encodings.web\\4.7.0\\system.text.encodings.web.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
