@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FBN2rQbUNJibaTrlN9tygfDTINI4WVBPSnOPQyBnOTqjOmZU4fGpGboCmvR42AhSfAps4wtaIc21iHhs3A1how==",
+  "dgSpecHash": "C6VLjK/XVX4BlU5sXLwUXvwUsDGdWtgqhSVQvYIy/DVaA0kLzwX0829vrdwh2XguhjBHUcbOF1px1esh09Zv5A==",
   "success": true,
-  "projectFilePath": "F:\\code2020\\dotnet5\\quickstart\\src\\Client\\Client.csproj",
+  "projectFilePath": "F:\\code2020\\dotnetcore\\IdentityServer4\\quickstart\\1_ClientCredentials\\src\\Client\\Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jiegege\\.nuget\\packages\\identitymodel\\4.3.1\\identitymodel.4.3.1.nupkg.sha512",
     "C:\\Users\\jiegege\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",

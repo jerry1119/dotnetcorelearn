@@ -3717,11 +3717,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "f:\\code2020\\dotnet5\\quickstart\\src\\IdentityServer\\IdentityServer.csproj",
+      "projectUniqueName": "F:\\code2020\\dotnetcore\\IdentityServer4\\quickstart\\1_ClientCredentials\\src\\IdentityServer\\IdentityServer.csproj",
       "projectName": "IdentityServer",
-      "projectPath": "f:\\code2020\\dotnet5\\quickstart\\src\\IdentityServer\\IdentityServer.csproj",
+      "projectPath": "F:\\code2020\\dotnetcore\\IdentityServer4\\quickstart\\1_ClientCredentials\\src\\IdentityServer\\IdentityServer.csproj",
       "packagesPath": "C:\\Users\\jiegege\\.nuget\\packages\\",
-      "outputPath": "f:\\code2020\\dotnet5\\quickstart\\src\\IdentityServer\\obj\\",
+      "outputPath": "F:\\code2020\\dotnetcore\\IdentityServer4\\quickstart\\1_ClientCredentials\\src\\IdentityServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jiegege\\AppData\\Roaming\\NuGet\\NuGet.Config",

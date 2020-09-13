@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MzNEy8ycT+GuzM3C6B7UddVSL4gwCvs7Gg9k/Pf5O223vyYeOAjDHfI0nsv2LGgYC1Z2DVrAkreQ6NI5Fqavpw==",
+  "dgSpecHash": "tXqpukQZbeyp7wc6wItc4gYxm13j21cDjNyMbcxz+yoCQDCq18POtBPQdNHnZ1G828sB0bXcZPNzZt3xw5ajyA==",
   "success": true,
-  "projectFilePath": "F:\\code2020\\dotnet5\\quickstart\\src\\Api\\Api.csproj",
+  "projectFilePath": "F:\\code2020\\dotnetcore\\IdentityServer4\\quickstart\\1_ClientCredentials\\src\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jiegege\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.7\\microsoft.aspnetcore.authentication.jwtbearer.3.1.7.nupkg.sha512",
     "C:\\Users\\jiegege\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",

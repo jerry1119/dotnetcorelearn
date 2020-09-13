@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\code2020\\dotnet5\\quickstart\\src\\Client\\Client.csproj": {}
+    "F:\\code2020\\dotnetcore\\IdentityServer4\\quickstart\\1_ClientCredentials\\src\\Client\\Client.csproj": {}
   },
   "projects": {
-    "F:\\code2020\\dotnet5\\quickstart\\src\\Client\\Client.csproj": {
+    "F:\\code2020\\dotnetcore\\IdentityServer4\\quickstart\\1_ClientCredentials\\src\\Client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\code2020\\dotnet5\\quickstart\\src\\Client\\Client.csproj",
+        "projectUniqueName": "F:\\code2020\\dotnetcore\\IdentityServer4\\quickstart\\1_ClientCredentials\\src\\Client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "F:\\code2020\\dotnet5\\quickstart\\src\\Client\\Client.csproj",
+        "projectPath": "F:\\code2020\\dotnetcore\\IdentityServer4\\quickstart\\1_ClientCredentials\\src\\Client\\Client.csproj",
         "packagesPath": "C:\\Users\\jiegege\\.nuget\\packages\\",
-        "outputPath": "F:\\code2020\\dotnet5\\quickstart\\src\\Client\\obj\\",
+        "outputPath": "F:\\code2020\\dotnetcore\\IdentityServer4\\quickstart\\1_ClientCredentials\\src\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jiegege\\AppData\\Roaming\\NuGet\\NuGet.Config",

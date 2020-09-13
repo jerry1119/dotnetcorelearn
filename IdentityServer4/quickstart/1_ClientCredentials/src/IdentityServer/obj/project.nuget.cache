@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tQZye9/l0RQIGE2y3KvQZWDApsoZKiEBeRn3p3bZnCrfKudYrBQ4RRNsrM6WuHHy+r/ZDBAsrCF3+MEzKmjy0A==",
+  "dgSpecHash": "psRsM1KLoBxeBeHBFcI0cWAw4F9tlsIxOU79NbcaYi4k/Ja5cxpL7pDRl5Zkpqifh8uGKlwys/5Xx+apGfAlqg==",
   "success": true,
-  "projectFilePath": "F:\\code2020\\dotnet5\\quickstart\\src\\IdentityServer\\IdentityServer.csproj",
+  "projectFilePath": "F:\\code2020\\dotnetcore\\IdentityServer4\\quickstart\\1_ClientCredentials\\src\\IdentityServer\\IdentityServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jiegege\\.nuget\\packages\\identitymodel\\4.3.0\\identitymodel.4.3.0.nupkg.sha512",
     "C:\\Users\\jiegege\\.nuget\\packages\\identityserver4\\4.0.0\\identityserver4.4.0.0.nupkg.sha512",

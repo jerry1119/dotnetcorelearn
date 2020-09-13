@@ -18,7 +18,8 @@ namespace IdentityServer
         public static IEnumerable<ApiScope> ApiScopes =>
             new ApiScope[]
             {
-                new ApiScope("api1","My API")
+                new ApiScope("api1","My API"),
+                new ApiScope("api2","Myapi2"),
             };
 
         public static IEnumerable<Client> Clients =>
@@ -35,7 +36,7 @@ namespace IdentityServer
                         new Secret("secret".Sha256())
                     },
                     //client 能访问的 scopes
-                    AllowedScopes = {"api1"}
+                    AllowedScopes = {"api1","api2"}
 
                 }
             };
