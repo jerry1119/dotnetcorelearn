@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PmwDbuaKIgyILu4WrvDV5+XI0V5lRwDO4CdX5bylmJWRlcgGO5G5hs3kmp7Z+K2LJD+by4wBXkfzV46lPkP3bg==",
+  "success": true,
+  "projectFilePath": "F:\\code2020\\dotnetcore\\sanceng\\sanceng\\sanceng.dal\\sanceng.dal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jiegege\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jiegege\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

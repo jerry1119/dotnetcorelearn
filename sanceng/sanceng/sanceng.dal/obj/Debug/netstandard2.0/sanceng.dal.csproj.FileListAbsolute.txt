@@ -1,0 +1,12 @@
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.dal\bin\Debug\netstandard2.0\sanceng.dal.deps.json
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.dal\bin\Debug\netstandard2.0\sanceng.dal.dll
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.dal\bin\Debug\netstandard2.0\sanceng.dal.pdb
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.dal\bin\Debug\netstandard2.0\sanceng.model.dll
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.dal\bin\Debug\netstandard2.0\sanceng.model.pdb
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.dal\obj\Debug\netstandard2.0\sanceng.dal.csprojAssemblyReference.cache
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.dal\obj\Debug\netstandard2.0\sanceng.dal.AssemblyInfoInputs.cache
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.dal\obj\Debug\netstandard2.0\sanceng.dal.AssemblyInfo.cs
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.dal\obj\Debug\netstandard2.0\sanceng.dal.csproj.CoreCompileInputs.cache
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.dal\obj\Debug\netstandard2.0\sanceng.dal.csproj.CopyComplete
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.dal\obj\Debug\netstandard2.0\sanceng.dal.dll
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.dal\obj\Debug\netstandard2.0\sanceng.dal.pdb

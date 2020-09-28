@@ -1,0 +1,9 @@
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.model\bin\Debug\netstandard2.0\sanceng.model.deps.json
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.model\bin\Debug\netstandard2.0\sanceng.model.dll
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.model\bin\Debug\netstandard2.0\sanceng.model.pdb
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.model\obj\Debug\netstandard2.0\sanceng.model.csprojAssemblyReference.cache
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.model\obj\Debug\netstandard2.0\sanceng.model.AssemblyInfoInputs.cache
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.model\obj\Debug\netstandard2.0\sanceng.model.AssemblyInfo.cs
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.model\obj\Debug\netstandard2.0\sanceng.model.csproj.CoreCompileInputs.cache
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.model\obj\Debug\netstandard2.0\sanceng.model.dll
+F:\code2020\dotnetcore\sanceng\sanceng\sanceng.model\obj\Debug\netstandard2.0\sanceng.model.pdb

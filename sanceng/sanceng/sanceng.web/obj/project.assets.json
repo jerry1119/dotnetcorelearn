@@ -1,0 +1,132 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "sanceng.bll/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "sanceng.dal": "1.0.0",
+          "sanceng.model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/sanceng.bll.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/sanceng.bll.dll": {}
+        }
+      },
+      "sanceng.dal/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "sanceng.model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/sanceng.dal.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/sanceng.dal.dll": {}
+        }
+      },
+      "sanceng.model/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/sanceng.model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/sanceng.model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "sanceng.bll/1.0.0": {
+      "type": "project",
+      "path": "../sanceng.bll/sanceng.bll.csproj",
+      "msbuildProject": "../sanceng.bll/sanceng.bll.csproj"
+    },
+    "sanceng.dal/1.0.0": {
+      "type": "project",
+      "path": "../sanceng.dal/sanceng.dal.csproj",
+      "msbuildProject": "../sanceng.dal/sanceng.dal.csproj"
+    },
+    "sanceng.model/1.0.0": {
+      "type": "project",
+      "path": "../sanceng.model/sanceng.model.csproj",
+      "msbuildProject": "../sanceng.model/sanceng.model.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "sanceng.bll >= 1.0.0",
+      "sanceng.model >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\jiegege\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "F:\\code2020\\dotnetcore\\sanceng\\sanceng\\sanceng.web\\sanceng.web.csproj",
+      "projectName": "sanceng.web",
+      "projectPath": "F:\\code2020\\dotnetcore\\sanceng\\sanceng\\sanceng.web\\sanceng.web.csproj",
+      "packagesPath": "C:\\Users\\jiegege\\.nuget\\packages\\",
+      "outputPath": "F:\\code2020\\dotnetcore\\sanceng\\sanceng\\sanceng.web\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\jiegege\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "F:\\code2020\\dotnetcore\\sanceng\\sanceng\\sanceng.bll\\sanceng.bll.csproj": {
+              "projectPath": "F:\\code2020\\dotnetcore\\sanceng\\sanceng\\sanceng.bll\\sanceng.bll.csproj"
+            },
+            "F:\\code2020\\dotnetcore\\sanceng\\sanceng\\sanceng.model\\sanceng.model.csproj": {
+              "projectPath": "F:\\code2020\\dotnetcore\\sanceng\\sanceng\\sanceng.model\\sanceng.model.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
