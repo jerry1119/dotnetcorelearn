@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/hejie331493066/aspnet-learn/src/ContosoPets.DataAccess/ContosoPets.DataAccess.csproj": {}
+  },
+  "projects": {
+    "/home/hejie331493066/aspnet-learn/src/ContosoPets.DataAccess/ContosoPets.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/hejie331493066/aspnet-learn/src/ContosoPets.DataAccess/ContosoPets.DataAccess.csproj",
+        "projectName": "ContosoPets.DataAccess",
+        "projectPath": "/home/hejie331493066/aspnet-learn/src/ContosoPets.DataAccess/ContosoPets.DataAccess.csproj",
+        "packagesPath": "/home/hejie331493066/.nuget/packages/",
+        "outputPath": "/home/hejie331493066/aspnet-learn/src/ContosoPets.DataAccess/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/hejie331493066/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "/home/hejie331493066/aspnet-learn/src/ContosoPets.Domain/ContosoPets.Domain.csproj": {
+                "projectPath": "/home/hejie331493066/aspnet-learn/src/ContosoPets.Domain/ContosoPets.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/hejie331493066/.dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/hejie331493066/aspnet-learn/src/ContosoPets.Domain/ContosoPets.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/hejie331493066/aspnet-learn/src/ContosoPets.Domain/ContosoPets.Domain.csproj",
+        "projectName": "ContosoPets.Domain",
+        "projectPath": "/home/hejie331493066/aspnet-learn/src/ContosoPets.Domain/ContosoPets.Domain.csproj",
+        "packagesPath": "/home/hejie331493066/.nuget/packages/",
+        "outputPath": "/home/hejie331493066/aspnet-learn/src/ContosoPets.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/hejie331493066/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/hejie331493066/.dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
