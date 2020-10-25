@@ -22,6 +22,8 @@ namespace ContosoPets.Api
         }
 
         public IConfiguration Configuration { get; }
+        
+        //官方教程地址: https://docs.microsoft.com/zh-cn/learn/modules/persist-data-ef-core/
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
