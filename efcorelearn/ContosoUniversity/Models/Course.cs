@@ -5,7 +5,7 @@ namespace ContosoUniversity.Models
 {
     public class Course
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]     //应用可以通过DatabaseGenerated特性指定主键
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]     //应用可以通过DatabaseGenerated特性指定主键
         public int ID { get; set; }
         public string Title { get; set; }
         public int Credits { get; set; }
