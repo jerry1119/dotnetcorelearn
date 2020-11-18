@@ -28,7 +28,8 @@ namespace ContosoUniversity
                 try
                 {
                     var context = services.GetRequiredService<SchoolContext>();
-                    //context.Database.EnsureCreated();
+                    //context.Database.EnsureCreated(); // 根据dbcontext的onmodelcreating映射的表
+                                                        //来创建数据库，如果已存在该数据库，但是存在表名对不上的情况，就不会创建
                      DbInitializer.Initialize(context); //往数据填充库种子数据
                 }
                 catch (System.Exception ex)

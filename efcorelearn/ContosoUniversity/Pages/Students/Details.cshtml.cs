@@ -29,7 +29,8 @@ namespace ContosoUniversity.Pages.Students
             }
 
             Student = await _context.Students
-                .Include(s => s.Enrollments)  //加载导航属性，有点像sql里面的联合查询，将两张表都加载到内存中，才能获取到另外表的数据
+                .Include(s => s.Enrollments)  //加载导航属性，有点像sql里面的联合查询，将两张表都加载到内存中，
+                                            //才能获取到另外表的数据,测过不加会报错
                 .ThenInclude(e => e.Course)
                 .AsNoTracking()   //不需要更新数据的时候，比如查询，加上这句以提升性能
                 .FirstOrDefaultAsync(m => m.ID == id);
