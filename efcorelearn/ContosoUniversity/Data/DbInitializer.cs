@@ -3,6 +3,7 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using ContosoUniversity.Models;
+using System.Collections.Generic;
 
 namespace ContosoUniversity.Data
 {
@@ -80,25 +81,32 @@ namespace ContosoUniversity.Data
             var courses = new Course[]
             {
                 new Course {ID = 1050, Title = "Chemistry",      Credits = 3,
-                    DepartmentID = departments.Single( s => s.Name == "Engineering").DepartmentID
+                    DepartmentID = departments.Single( s => s.Name == "Engineering").DepartmentID,
+                    Instructors = new List<Instructor> {instructors[2], instructors[3]}
                 },
                 new Course {ID = 4022, Title = "Microeconomics", Credits = 3,
-                    DepartmentID = departments.Single( s => s.Name == "Economics").DepartmentID
+                    DepartmentID = departments.Single( s => s.Name == "Economics").DepartmentID,
+                    Instructors = new List<Instructor> {instructors[4]}
                 },
                 new Course {ID = 4041, Title = "Macroeconomics", Credits = 3,
-                    DepartmentID = departments.Single( s => s.Name == "Economics").DepartmentID
+                    DepartmentID = departments.Single( s => s.Name == "Economics").DepartmentID,
+                    Instructors = new List<Instructor> {instructors[4]}
                 },
                 new Course {ID = 1045, Title = "Calculus",       Credits = 4,
-                    DepartmentID = departments.Single( s => s.Name == "Mathematics").DepartmentID
+                    DepartmentID = departments.Single( s => s.Name == "Mathematics").DepartmentID,
+                    Instructors = new List<Instructor> {instructors[1]}
                 },
                 new Course {ID = 3141, Title = "Trigonometry",   Credits = 4,
-                    DepartmentID = departments.Single( s => s.Name == "Mathematics").DepartmentID
+                    DepartmentID = departments.Single( s => s.Name == "Mathematics").DepartmentID,
+                    Instructors = new List<Instructor> {instructors[2]}
                 },
                 new Course {ID = 2021, Title = "Composition",    Credits = 3,
-                    DepartmentID = departments.Single( s => s.Name == "English").DepartmentID
+                    DepartmentID = departments.Single( s => s.Name == "English").DepartmentID,
+                    Instructors = new List<Instructor> {instructors[0]}
                 },
                 new Course {ID = 2042, Title = "Literature",     Credits = 4,
-                    DepartmentID = departments.Single( s => s.Name == "English").DepartmentID
+                    DepartmentID = departments.Single( s => s.Name == "English").DepartmentID,
+                    Instructors = new List<Instructor> {instructors[0]}
                 },
             };
 
@@ -121,44 +129,6 @@ namespace ContosoUniversity.Data
             context.OfficeAssignments.AddRange(officeAssignments);
             context.SaveChanges();
 
-            // var courseInstructors = new CourseAssignment[]
-            // {
-            //     new CourseAssignment {
-            //         CourseID = courses.Single(c => c.Title == "Chemistry" ).ID,
-            //         InstructorID = instructors.Single(i => i.LastName == "Kapoor").ID
-            //         },
-            //     new CourseAssignment {
-            //         CourseID = courses.Single(c => c.Title == "Chemistry" ).ID,
-            //         InstructorID = instructors.Single(i => i.LastName == "Harui").ID
-            //         },
-            //     new CourseAssignment {
-            //         CourseID = courses.Single(c => c.Title == "Microeconomics" ).ID,
-            //         InstructorID = instructors.Single(i => i.LastName == "Zheng").ID
-            //         },
-            //     new CourseAssignment {
-            //         CourseID = courses.Single(c => c.Title == "Macroeconomics" ).ID,
-            //         InstructorID = instructors.Single(i => i.LastName == "Zheng").ID
-            //         },
-            //     new CourseAssignment {
-            //         CourseID = courses.Single(c => c.Title == "Calculus" ).ID,
-            //         InstructorID = instructors.Single(i => i.LastName == "Fakhouri").ID
-            //         },
-            //     new CourseAssignment {
-            //         CourseID = courses.Single(c => c.Title == "Trigonometry" ).ID,
-            //         InstructorID = instructors.Single(i => i.LastName == "Harui").ID
-            //         },
-            //     new CourseAssignment {
-            //         CourseID = courses.Single(c => c.Title == "Composition" ).ID,
-            //         InstructorID = instructors.Single(i => i.LastName == "Abercrombie").ID
-            //         },
-            //     new CourseAssignment {
-            //         CourseID = courses.Single(c => c.Title == "Literature" ).ID,
-            //         InstructorID = instructors.Single(i => i.LastName == "Abercrombie").ID
-            //         },
-            // };
-
-            // context.CourseAssignments.AddRange(courseInstructors);
-            //context.SaveChanges();
 
             var enrollments = new Enrollment[]
             {
