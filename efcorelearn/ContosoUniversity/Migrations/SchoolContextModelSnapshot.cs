@@ -45,9 +45,6 @@ namespace ContosoUniversity.Migrations
                     b.Property<int?>("Grade")
                         .HasColumnType("int");
 
-                    b.Property<double>("Price")
-                        .HasColumnType("double");
-
                     b.Property<int>("StudentID")
                         .HasColumnType("int");
 
@@ -70,10 +67,15 @@ namespace ContosoUniversity.Migrations
                         .HasColumnType("datetime");
 
                     b.Property<string>("FirstMidName")
-                        .HasColumnType("text");
+                        .IsRequired()
+                        .HasColumnName("FirstName")
+                        .HasColumnType("varchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<string>("LastName")
-                        .HasColumnType("text");
+                        .IsRequired()
+                        .HasColumnType("varchar(50)")
+                        .HasMaxLength(50);
 
                     b.HasKey("ID");
 
