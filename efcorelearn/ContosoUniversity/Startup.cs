@@ -30,6 +30,7 @@ namespace ContosoUniversity
             services.AddDbContext<SchoolContext>(options =>
                     //options.UseMySQL(Configuration.GetConnectionString("SchoolContext"))
                     options.UseSqlite(Configuration.GetConnectionString("SchoolContext"))
+                    .LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information)
                     );
         }
 

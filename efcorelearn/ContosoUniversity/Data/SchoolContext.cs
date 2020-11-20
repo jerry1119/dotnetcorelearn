@@ -22,14 +22,14 @@ namespace ContosoUniversity.Data
         public DbSet<OfficeAssignment> OfficeAssignments { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Course>().ToTable("Course");
-            modelBuilder.Entity<Enrollment>().ToTable("Enrollment");
-            modelBuilder.Entity<Student>().ToTable("Student");
+            // modelBuilder.Entity<Course>().ToTable("Course");
+            // modelBuilder.Entity<Enrollment>().ToTable("Enrollment");
+            // modelBuilder.Entity<Student>().ToTable("Student");
             modelBuilder.Entity<Department>().ToTable("Department");
             modelBuilder.Entity<Instructor>().ToTable("Instructor");
             modelBuilder.Entity<OfficeAssignment>().ToTable("OfficeAssignment");
-            
-            //modelBuilder.ApplyConfigurationsFromAssembly(typeof(StudentConf).Assembly);
+            //既可以直接在这里配置fluentApi，也可以单独在config类中配置
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(StudentConf).Assembly);
         }
     }
 }
