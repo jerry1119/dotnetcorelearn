@@ -32,10 +32,10 @@ namespace ContosoUniversity.Pages.Instructors
                 .Include(i => i.OfficeAssignment)
                 .Include(i => i.Courses)
                     .ThenInclude(c => c.Department)
-                .Include(i => i.Courses)
-                    .ThenInclude(c => c.Enrollments)
-                        .ThenInclude(e => e.Student)
-                .AsNoTracking()
+                // .Include(i => i.Courses)
+                //     .ThenInclude(c => c.Enrollments)
+                //         .ThenInclude(e => e.Student)
+                //.AsNoTracking()
                 .OrderBy(i => i.LastName)
                 .ToListAsync();  //tolist是直接把这几张表全加载到内存中了
             
@@ -51,6 +51,11 @@ namespace ContosoUniversity.Pages.Instructors
                 courseID = courseID.Value;
                 var selectedCourse = InstructorData.Courses
                     .Where(c => c.ID == courseID).SingleOrDefault();//直接向上面那样single也可以，但是可读性差一点
+                await _context.Entry(selectedCourse).Collection(c  => c.Enrollments).LoadAsync();
+                foreach (var enrollment in selectedCourse.Enrollments)
+                {
+                    await _context.Entry(enrollment).Reference(e => e.Student).LoadAsync();
+                }
                 InstructorData.Enrollments = selectedCourse.Enrollments;
             }
         }
