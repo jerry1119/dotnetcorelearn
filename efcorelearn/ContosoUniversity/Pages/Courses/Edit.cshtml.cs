@@ -11,7 +11,7 @@ using ContosoUniversity.Models;
 
 namespace ContosoUniversity.Pages.Courses
 {
-    public class EditModel : PageModel
+    public class EditModel : DepartmentNamePageModel
     {
         private readonly ContosoUniversity.Data.SchoolContext _context;
 
@@ -37,38 +37,37 @@ namespace ContosoUniversity.Pages.Courses
             {
                 return NotFound();
             }
-           ViewData["DepartmentID"] = new SelectList(_context.Departments, "DepartmentID", "DepartmentID");
+            //下拉控件选到当前DepartmentID
+            PopulateDepartmentsDropDownList(_context, Course.DepartmentID);
             return Page();
         }
 
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see https://aka.ms/RazorPagesCRUD.
-        public async Task<IActionResult> OnPostAsync()
+        public async Task<IActionResult> OnPostAsync(int? id)
         {
-            if (!ModelState.IsValid)
+            
+            if (id is null)
             {
-                return Page();
+                return NotFound();
+            }
+            var courseToUpdate = await _context.Courses.FindAsync(id);
+            if (courseToUpdate is null)
+            {
+                return NotFound();
             }
 
-            _context.Attach(Course).State = EntityState.Modified;
-
-            try
+            if (await TryUpdateModelAsync<Course>(
+                courseToUpdate,
+                "course",
+                c => c.Credits, c => c.DepartmentID, c => c.Title))
             {
                 await _context.SaveChangesAsync();
+                return RedirectToPage("./Index");
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!CourseExists(Course.ID))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return RedirectToPage("./Index");
+            //如果TryUpdateModelAsync失败,保留已选择的DepartmentID 
+            PopulateDepartmentsDropDownList(_context, courseToUpdate.DepartmentID);
+            return Page();
         }
 
         private bool CourseExists(int id)
