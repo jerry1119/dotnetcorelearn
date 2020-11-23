@@ -2,10 +2,10 @@
 @model ContosoUniversity.Pages.Departments.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Departments";
 }
 
-<h1>Index</h1>
+<h2>Departments</h2>
 
 <p>
     <a asp-page="Create">Create New</a>
@@ -25,6 +25,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Department[0].Administrator)
             </th>
+            <th>
+                RowVersion
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -41,7 +44,10 @@
                 @Html.DisplayFor(modelItem => item.StartDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Administrator.FirstMidName)
+                @Html.DisplayFor(modelItem => item.Administrator.FullName)
+            </td>
+            <td>
+                @item.RowVersion[7]
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.DepartmentID">Edit</a> |

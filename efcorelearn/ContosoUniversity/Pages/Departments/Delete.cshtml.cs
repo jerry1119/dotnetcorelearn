@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using ContosoUniversity.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using ContosoUniversity.Data;
-using ContosoUniversity.Models;
+using System.Threading.Tasks;
 
 namespace ContosoUniversity.Pages.Departments
 {
@@ -21,40 +17,51 @@ namespace ContosoUniversity.Pages.Departments
 
         [BindProperty]
         public Department Department { get; set; }
+        public string ConcurrencyErrorMessage { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public async Task<IActionResult> OnGetAsync(int id, bool? concurrencyError)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             Department = await _context.Departments
-                .Include(d => d.Administrator).FirstOrDefaultAsync(m => m.DepartmentID == id);
+                .Include(d => d.Administrator)
+                .AsNoTracking()
+                .FirstOrDefaultAsync(m => m.DepartmentID == id);
 
             if (Department == null)
             {
-                return NotFound();
+                 return NotFound();
+            }
+
+            if (concurrencyError.GetValueOrDefault())  //这种可空类型的，通过getvalue方法获取挺方便的
+            {
+                //字符串比较长的话，这样写真好。。
+                ConcurrencyErrorMessage = "The record you attempted to delete "
+                  + "was modified by another user after you selected delete. "
+                  + "The delete operation was canceled and the current values in the "
+                  + "database have been displayed. If you still want to delete this "
+                  + "record, click the Delete button again.";
             }
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(int? id)
+        public async Task<IActionResult> OnPostAsync(int id)
         {
-            if (id == null)
+            try
             {
-                return NotFound();
+                //.any()方法，判断一个队列是否包含 某个元素,返回bool类型，这也挺好用
+                if (await _context.Departments.AnyAsync(
+                    m => m.DepartmentID == id))
+                {
+                    //ef在SaveChage的时候会检查RowVersion的值，如果数据库中的RowVersion值已改变，就会触发异常
+                    _context.Departments.Remove(Department);
+                    await _context.SaveChangesAsync();
+                }
+                return RedirectToPage("./Index");
             }
-
-            Department = await _context.Departments.FindAsync(id);
-
-            if (Department != null)
+            catch (DbUpdateConcurrencyException)
             {
-                _context.Departments.Remove(Department);
-                await _context.SaveChangesAsync();
+                return RedirectToPage("./Delete",
+                    new { concurrencyError = true, id = id });
             }
-
-            return RedirectToPage("./Index");
         }
     }
 }
